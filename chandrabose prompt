@@ -1,0 +1,1 @@
+write a media pipe code to finfd face mesh amd if the lip moves record the audio and give person id  1 and 2 and 3 so on  how many faces detected and save the audio in folder to number of  person id  so write a pytthon code if the lip does not move  dont record  the audio to corresponding person and id 

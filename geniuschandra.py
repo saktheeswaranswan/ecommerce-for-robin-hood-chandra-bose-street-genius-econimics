@@ -11,7 +11,7 @@ mp_face_mesh = mp.solutions.face_mesh
 
 # Constants
 NUM_FACE_IDS = 2  # Maximum number of face IDs to track
-AUDIO_DURATION = 3  # Audio recording duration in seconds
+AUDIO_DURATION = 10  # Audio recording duration in seconds
 OUTPUT_FOLDER = "recordings"  # Folder to save the audio recordings
 
 # Create the output folder if it doesn't exist
@@ -45,7 +45,7 @@ def has_lip_movement(face_landmarks):
     return lip_distance > 0.02  # Adjust this threshold as needed
 
 # Create video capture from webcam
-cap = cv2.VideoCapture("cmmunist.mp4")
+cap = cv2.VideoCapture(0)
 
 # Main loop
 while True:
